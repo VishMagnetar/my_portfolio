@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Mankar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="animation.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vishal <span>Mankar</span></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Vishal Mankar" class="hero-image">
+            <h1>Hi, I'm Vishal, a BCA Student Passionate About Data Science and Web Development.</h1>
+            <p>I specialize in Python programming, data analysis, and creating modern web applications.</p>
+            <div class="hero-buttons">
+                <a href="VishalMankar.pdf" class="btn">Download My Resume</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="about-text">
+                <p>Hi, I'm a <span class="typing"></span></p>
+                <p>I'm Vishal Mankar, a BCA student at SGBA University, in Shankarlal Khandelwal College Akola. I'm interested in data science and web development because [reason/motivation].</p>
+                <a href="VishalMankar.pdf" class="btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>Python, HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Science Skills</h3>
+                <p>Data Analysis, Machine Learning, Pandas, NumPy, Matplotlib, Seaborn</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>Frontend design, Backend basics</p>
+            </div>
+            <div class="skill-card">
+                <h3>Cloud Computing</h3>
+                <p>AWS basics (internship experience)</p>
+            </div>
+            <div class="skill-card">
+                <h3>Other Tools</h3>
+                <p>Git, MongoDB, Excel</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Online Auction System</h3>
+                <p>Developed a platform for live auctions, connecting buyers and sellers.</p>
+                <p>Technologies: HTML, CSS, JavaScript</p>
+                <a href="https://github.com/VishMagnetar" class="btn">GitHub Repo</a>
+            </div>
+            <!--naveen project card appan yethe add kru shakto -->
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <div class="certifications-container">
+            <div class="certification-card">
+                <h3>Python for Machine Learning</h3>
+                <p>Great Learning Academy, 2025</p>
+                <p>This course covers the basics of Python programming and its application in machine learning.</p>
+                <a href="Python_for_Machine_Learning.pdf" class="btn">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>Python 101 for Data Science</h3>
+                <p>IBM, Cognitive Class, 2025</p>
+                <p>This course provides an introduction to Python for data science, including data analysis and visualization.</p>
+                <a href="Python_101_for_Data_Science.pdf" class="btn">View Certificate</a>
+            </div>
+            <!-- ith naveen certificates add kru shkto -->
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xdkkjzrw" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://wa.me/8669562044" class="fab fa-whatsapp"></a>
+            <a href="https://www.linkedin.com/in/vishal-mankar-a02889340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fab fa-linkedin-in"></a>
+            <a href="https://github.com/VishMagnetar" class="fab fa-github"></a>
+            <a href="mailto:mankarvishal28@gmail.com" class="fas fa-envelope"></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Vishal Mankar. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
