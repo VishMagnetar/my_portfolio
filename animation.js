@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const roles = ["web developer", "Python developer", "freelancer"];
+    const roles = ["Python developer", "Data Analyst", "Business Analyst","Data Storyteller","Problem Solver","Insight Discoverer" ];
     let index = 0;
     let charIndex = 0;
     const typingElement = document.querySelector("#about .typing");
