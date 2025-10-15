@@ -333,3 +333,8 @@ form .btn {
         align-items: center;
     }
 }
+/* to fix the hero button click */
+.hero .hero-buttons {
+    position: relative;
+    z-index: 2;
+}
